@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tugce.cookwithbeans.MainActivity">
+
+    <ScrollView
+        android:id="@+id/svScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fasulye"
+                android:scaleType="centerCrop"
+                android:id="@+id/beans_image_view"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5 things cook with beans"
+                android:textAllCaps="true"
+                android:layout_alignBottom="@id/beans_image_view"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="32sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8sp"
+                android:text="1.PİCKLED BEANS"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:background="#FFFFFF"
+                android:id="@+id/text_recipe1"
+                android:layout_below="@+id/beans_image_view" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recipe1"
+                android:src="@drawable/fasulye_tursusu"
+                android:layout_below="@id/text_recipe1"
+                android:scaleType="centerCrop" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="recipe"
+                android:textAllCaps="true"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:onClick="pickledBeans"
+                android:textSize="24sp"
+                android:layout_below="@+id/recipe1"
+                android:id="@+id/pickled_button" />
+            <TextView
+                android:id="@+id/pickled_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/pickled_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2.haricot bean"
+                android:layout_margin="8sp"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_below="@+id/pickled_text_view"
+                android:textSize="26sp"
+                android:id="@+id/text_recipe2"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recipe2"
+                android:src="@drawable/kuru_fasulye"
+                android:layout_below="@id/text_recipe2"
+                android:scaleType="centerCrop" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="recipe"
+                android:textAllCaps="true"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:onClick="haricotBeans"
+                android:textSize="24sp"
+                android:layout_below="@+id/recipe2"
+                android:id="@+id/haricot_button"/>
+            <TextView
+                android:id="@+id/haricot_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/haricot_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3.tahini beans puree"
+                android:textAllCaps="true"
+                android:layout_below="@+id/haricot_text_view"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_margin="8sp"
+                android:id="@+id/text_recipe3"
+                android:textSize="26sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recipe3"
+                android:src="@drawable/tahinli_fasulye"
+                android:layout_below="@id/text_recipe3"
+                android:scaleType="centerCrop"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="recipe"
+                android:textAllCaps="true"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:onClick="tahiniBeans"
+                android:textSize="24sp"
+                android:layout_below="@+id/recipe3"
+                android:id="@+id/tahini_button" />
+            <TextView
+                android:id="@+id/tahini_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/tahini_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4.green bean casserole"
+                android:textAllCaps="true"
+                android:id="@+id/text_recipe4"
+                android:layout_below="@+id/tahini_text_view"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_margin="8sp"
+                android:textSize="26sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recipe4"
+                android:src="@drawable/taze_fasulye"
+                android:layout_below="@id/text_recipe4"
+                android:scaleType="centerCrop"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/recipe4"
+                android:id="@+id/greenCasserole_button"
+                android:text="recipe"
+                android:textAllCaps="true"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:onClick="greenCasseroleBeans"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/greenCasserole_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/greenCasserole_button"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5.green salad"
+                android:textAllCaps="true"
+                android:layout_below="@+id/greenCasserole_text_view"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_margin="8sp"
+                android:id="@+id/text_recipe5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recipe5"
+                android:src="@drawable/piyaz"
+                android:layout_below="@id/text_recipe5"
+                android:scaleType="centerCrop" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:layout_below="@id/recipe5"
+                android:id="@+id/salad_button"
+                android:text="recipe"
+                android:background="#FFFFFF"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:onClick="saladBeans"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/salad_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_below="@+id/salad_button"/>
+
+         </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
